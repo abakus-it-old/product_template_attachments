@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="view_product_template_attachments">
+            <field name="name">product.template.attachments</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+				<page string="Information" position="after">
+					<page string="Attachments">
+							<field name="attachments_ids" widget="many2many_binary" string="Attach a file"/>
+					</page>
+				</page>
+            </field>
+        </record>
+	</data>
+</openerp>
+
